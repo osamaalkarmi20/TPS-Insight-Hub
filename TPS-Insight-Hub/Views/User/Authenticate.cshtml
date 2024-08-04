@@ -1,0 +1,76 @@
+﻿
+@model LoginDTO
+
+@* <body>
+    <h4 style="text-align:center; margin-bottom:0px;">Please SignIn </h4>
+
+
+    <form method="Post" asp-controller="User" asp-action="Authenticate">
+        <div class="form-group">
+             <label class="" for="username">username:</label> 
+            <input type="text" name="username" class="form-control" id="username" placeholder="UserName">
+            <span asp-validation-for="@Model.UserName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label class="" for="password"></label>
+            <input type="password" name="Password" class="form-control" id="Password" placeholder="Password">
+            <span asp-validation-for="@Model.Password" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-outline-success mt-2" style="width:100%">Sign in</button>
+    </form>
+</body>
+ *@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="login-box">
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <img src="https://techprocess.net/wp-content/uploads/2021/12/TPS-logo.png" />
+                </div>
+                <div class="col-sm-6 d-flex " style="margin-top:50px">
+                    <div class="slider-feature-card ">
+                        <div class="logo">
+                            <div class="logo-font">
+                                <img src="https://freepngimg.com/thumb/light/78155-icons-light-idea-computer-lighting-incandescent-bulb.png" alt="Logo" style="width: 50px; height: 50px; margin-top:35px;"> TPS Insight Hub
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ">
+                    <h3 class="header-title mb-4 text-center">LOGIN</h3>
+                    <form method="Post" asp-controller="User" asp-action="Authenticate">
+                        <div class="form-group">
+                            <input type="text" name="username" class="form-control" id="username" placeholder="User Name">
+                            <span asp-validation-for="@Model.UserName" class="text-danger"></span>
+                            <input type="password" name="Password" class="form-control" id="Password" placeholder="Password">
+                            <span asp-validation-for="@Model.Password" class="text-danger"></span>
+                            <button type="submit" class="btn btn-outline-success mt-2" style="width:100%">LOGIN</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9HgB8MS6nD6trtW+j4ch+cV6h9vpT0U6dIHh6" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿
+@model RegisterUserDTO
+
+<h4>Please Sign Up</h4>
+
+<form method="post" asp-controller="User" asp-action="SignUp">
+    <div class="form-group">
+        <label for="username">User Name</label>
+        <input type="text" name="UserName" class="form-control" id="username" placeholder="UserName" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" name="Email" class="form-control" id="email" placeholder="Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="Password" class="form-control" id="password" placeholder="Password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="phonenumber">Phone Number</label>
+        <input type="text" name="PhoneNumber" class="form-control" id="phonenumber" placeholder="PhoneNumber" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="position">Position</label>
+        <select name="PositionId" class="form-control" id="position">
+            @foreach (var position in Model.Positions)
+            {
+                <option value="@position.Value">@position.Text</option>
+            }
+        </select>
+    </div>
+    <input type="hidden" asp-for="Roles" value="user">
+    <div class="form-group">
+        <label for="department">Department</label>
+        <select name="DepartmentId" class="form-control" id="department">
+            @foreach (var department in Model.Departments)
+            {
+                <option value="@department.Value">@department.Text</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign up</button>
+</form>

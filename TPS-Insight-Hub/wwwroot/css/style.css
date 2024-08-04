@@ -1,0 +1,84 @@
+﻿body {
+    background-color: #f7f8fa;
+}
+
+.login-box {
+    background: url(https://i.imgur.com/73BxBuI.png);
+    background-size: cover;
+    background-position: center;
+    padding: 70px;
+    margin: 90px auto;
+    -webkit-box-shadow: 0 2px 60px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 60px -5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    
+}
+
+    .logo .logo-font {
+        color: white;
+        margin-top: 70px;
+        
+    }
+
+    
+
+.header-title {
+    text-align: center;
+}
+
+.login-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+    .login-form .form-control {
+        border-radius: 0;
+        margin-bottom: 30px;
+    }
+
+    .login-form .form-group {
+        position: relative;
+    }
+
+        .login-form .form-group .forgot-password {
+            position: absolute;
+            top: 6px;
+            right: 15px;
+        }
+
+    .login-form .btn {
+        border-radius: 0;
+        -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+
+        .login-form .btn.btn-primary {
+            background: #3391ff;
+            border-color: #31c0ff;
+        }
+
+.slider-feature-card {
+    
+    margin-left: 90px;
+    width: 420px;
+    height: 80px;
+    display: flex;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+img {
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+
